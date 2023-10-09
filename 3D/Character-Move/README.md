@@ -23,6 +23,10 @@ WASD키에 맞춰 플레이어가 움직이는 예제(애니메이션 포함)
 - 플레이어의 속력을 구할때 수직축(Y Axis)를 배제하지 않아서, 플레이어가 낙하할때도 Run 애니메이션이 트리거되는게 아쉽다..
 - MeshInstance3D의 Material -> Emission 기능을 사용해서 플레이어의 몸에서 빛이 나게 했는데, 다음엔 Blender에서 오브젝트의 Modifier를 써서 해보자
 
+## 🛠️ Resources 🛠️
+
+- [Godot 4 / Blender - Third Person Character From Scratch](https://www.youtube.com/watch?v=VasHZZyPpYU) by [DevLogLogan](https://www.youtube.com/@DevLogLogan)
+
 ## 🖼️ Screenshots 🖼️
 
 ![image](https://github.com/slo0ey/Godot-Examples/assets/49348248/4c6e79d9-6ea2-493a-8f8a-1532177db447)
