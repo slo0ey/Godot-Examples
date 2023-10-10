@@ -9,6 +9,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var camera = $Camera3D
 @onready var anim = $AnimationPlayer
+@onready var hitbox = $Camera3D/Area3D
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -53,3 +54,6 @@ func _physics_process(delta):
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		anim.play("idle")
+		for body in hitbox.get_overlapping_bodies():
+			body = body as Node3D
+			print("Hit! " + body.name)
