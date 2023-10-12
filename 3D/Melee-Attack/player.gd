@@ -54,6 +54,8 @@ func _physics_process(delta):
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "attack":
 		anim.play("idle")
+		
 		for body in hitbox.get_overlapping_bodies():
 			body = body as Node3D
-			print("Hit! " + body.name)
+			if body.get_parent().name == "Target":
+				body.queue_free()

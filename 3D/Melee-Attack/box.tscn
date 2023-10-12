@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddkeqdtgch4v6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_eu662"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mn6ka"]
+albedo_color = Color(0.560784, 0.431373, 1, 1)
+emission_enabled = true
+emission = Color(0.560784, 0.431373, 1, 1)
+emission_energy_multiplier = 2.38
+
+[sub_resource type="BoxMesh" id="BoxMesh_78rk1"]
+material = SubResource("StandardMaterial3D_mn6ka")
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fflv4"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Box" type="StaticBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_eu662")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_78rk1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fflv4")

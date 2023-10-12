@@ -6,7 +6,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oagu0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t5h3b"]
-size = Vector3(2, 0.5, 1)
+size = Vector3(2, 0.5, 2)
 
 [sub_resource type="Animation" id="Animation_5nr7x"]
 length = 0.001
@@ -70,7 +70,7 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(0.5, 0.5),
+"transitions": PackedFloat32Array(-3, -3),
 "update": 0,
 "values": [Vector3(0, -0.785398, 0), Vector3(0, 2.35619, 0)]
 }
@@ -82,7 +82,7 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(-3),
 "update": 0,
 "values": [Vector3(0.7, -0.693, -0.7)]
 }
@@ -94,7 +94,7 @@ tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(-3),
 "update": 0,
 "values": [Vector3(1.5708, 2.35619, 0)]
 }
@@ -172,12 +172,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 [node name="sword_pivot" type="Node3D" parent="Camera3D"]
 
 [node name="sword" parent="Camera3D/sword_pivot" instance=ExtResource("2_snm28")]
-transform = Transform3D(-0.0674669, 0.0158864, 1.198, -0.240377, 1.17532, -0.0291229, -1.17374, -0.241614, -0.0628971, 0.713304, -0.692916, -0.790155)
+transform = Transform3D(-0.067467, 0.0158864, 1.198, -0.240377, 1.17532, -0.0291229, -1.17374, -0.241614, -0.0628972, 0.713304, -0.692916, -0.790155)
 
 [node name="Area3D" type="Area3D" parent="Camera3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.686824, -1.43594)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.687, -1)
 shape = SubResource("BoxShape3D_t5h3b")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
