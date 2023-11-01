@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://ii0k51vvqisc"]
 
-[ext_resource type="AudioStream" uid="uid://c34p7f2pxwcag" path="res://9mm-pistol-shoot-short-reverb-7152.mp3" id="1_ci3co"]
+[ext_resource type="AudioStream" uid="uid://c34p7f2pxwcag" path="res://Assets/9mm-pistol-shoot-short-reverb-7152.mp3" id="1_ci3co"]
 [ext_resource type="Script" path="res://pistol.gd" id="1_sqtp6"]
-[ext_resource type="Texture2D" uid="uid://cdotjix0wi58d" path="res://muzzle_05.png" id="2_iriv7"]
+[ext_resource type="Texture2D" uid="uid://cdotjix0wi58d" path="res://Assets/muzzle_05.png" id="2_iriv7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opskx"]
 resource_name = "Main"

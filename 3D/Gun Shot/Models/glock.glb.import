@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://oplaehsbwnba"
-path="res://.godot/imported/glock.glb-477503eafd4f6aa3f191fd48c7ec7d6e.scn"
+path="res://.godot/imported/glock.glb-b56dee8583fdd06be9c02c1771edec6b.scn"
 
 [deps]
 
-source_file="res://glock.glb"
-dest_files=["res://.godot/imported/glock.glb-477503eafd4f6aa3f191fd48c7ec7d6e.scn"]
+source_file="res://Models/glock.glb"
+dest_files=["res://.godot/imported/glock.glb-b56dee8583fdd06be9c02c1771edec6b.scn"]
 
 [params]
 

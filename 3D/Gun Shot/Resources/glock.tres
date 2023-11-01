@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://blqwv7wvvnmx6"]
+
+[ext_resource type="Script" path="res://Scripts/weapon_resource.gd" id="1_0n2ij"]
+
+[resource]
+script = ExtResource("1_0n2ij")
+Weapon_Name = "Glock 17"
+Activate_Anim = "Glock_Activate"
+Deactivate_Anim = "Glock_Deactivate"
+Shoot_Anim = "Glock_Shoot"
+Reload_Anim = "Glock_Reload"
+OOA_Anim = "Glock_OOA"
+Current_Ammo = 17
+Reserve_Ammo = 17
+Magazine = 17
+Max_Ammo = 51
+Auto_Fire = false
